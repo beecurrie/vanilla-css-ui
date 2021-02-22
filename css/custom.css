@@ -1,151 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 
-
-    /* CSS Reset */
-      /* http://meyerweb.com/eric/tools/css/reset/
-         v2.0 | 20110126
-         License: none (public domain)
-      */
-
-      html, body, div, span, applet, object, iframe,
-      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-      a, abbr, acronym, address, big, cite, code,
-      del, dfn, em, img, ins, kbd, q, s, samp,
-      small, strike, strong, sub, sup, tt, var,
-      b, u, i, center,
-      dl, dt, dd, ol, ul, li,
-      fieldset, form, label, legend,
-      table, caption, tbody, tfoot, thead, tr, th, td,
-      article, aside, canvas, details, embed,
-      figure, figcaption, footer, header, hgroup,
-      menu, nav, output, ruby, section, summary,
-      time, mark, audio, video {
-      	margin: 0;
-      	padding: 0;
-      	border: 0;
-      	font-size: 100%;
-      	font: inherit;
-      	vertical-align: baseline;
-      }
-      /* HTML5 display-role reset for older browsers */
-      article, aside, details, figcaption, figure,
-      footer, header, hgroup, menu, nav, section {
-      	display: block;
-      }
-      body {
-      	line-height: 1;
-      }
-      ol, ul {
-      	list-style: none;
-      }
-      blockquote, q {
-      	quotes: none;
-      }
-      blockquote:before, blockquote:after,
-      q:before, q:after {
-      	content: '';
-      	content: none;
-      }
-      table {
-      	border-collapse: collapse;
-      	border-spacing: 0;
-      }
-
-  /* CSS Reset END */
-
-
-  /* Custom CSS BEGIN */
+    /* Body CSS Begin */
       div {
         border: 1px solid #333;
       }
+    /* Body CSS END */
 
+    /* UI Container CSS begin */
       .mobile-container {
         height: 100vh;
-        border: 3px solid pink;
+        background-color: #333;
       }
+    /* UI Container CSS END */
 
+    /* Nav CSS Begin */
       .mobile-nav {
-        background-color: #d8e0bb;
-        height: 70px;
+        height: 5vh;
+        background-color: #2A2A2A;
+        padding: 10px;
       }
 
       .burger-menu,
       .logo,
       .search {
-        height: 65px;
+        height: 90%;
         display: inline-block;
-        width: 20.5%;
-        border: 2px solid white;
+        border: none;
+        width: 20%;
       }
 
       .logo {
         width: 57.5%;
+        border: none;
       }
 
+    /* Hamburger Menu Icon */
+      .fa-bars {
+        position: absolute;
+        color: #D2DBED;
+        top: 40px;
+        left: 30px;
+        font-size: 60px;
+        color: white;
+        margin-left: 10px;
+      }
+
+    /* Search Icon */
+      .fa-search {
+        position: absolute;
+        color: #D2DBED;
+        top: 40px;
+        right: 50px;
+        font-size: 60px;
+        color: white;
+      }
+    /* Nav CSS END */
+
+    /* Daily CSS Begin */
+
       .daily-section {
-        background-color: #b6cec7;
+        background-color: #333;
         height: 30vh;
       }
 
       .current-city {
+        font-family: 'Kalam', cursive;
+        color: #D2DBED;
         text-transform: uppercase;
-        margin-top: 13px;
-        margin-bottom: 13px;
-        font-size: 30px;
+        margin-top: 50px;
+        margin-left: 23px;
+        font-size: 90px;
         padding-left: 10px;
       }
 
       .weather-image,
       .weather-info {
         float: left;
-        border: solid 3px white;
-        width: 46.2%;
-        height: 75%;
         padding: 10px;
-        margin: 5px;
+        border: none;
+        text-align: center;
+        margin-left: 50px;
+        margin-top: 50px;
       }
 
+      .weather-image {
+        background-color: white;
+        border-radius: 900px;
+        height: 300px;
+        width: 300px;
+      }
+
+      .fa-cloud-sun {
+        text-align: center;
+        font-size: 200px;
+        color: #93cce2;
+        margin-top: 30px;
+      }
+
+      .weather-info {
+        font-family: 'Balsamiq Sans', cursive;
+        width: 53%;
+        height: 60%;
+        color: #D2DBED;
+        font-size: 60px;
+        margin: 30px;
+      }
+
+      .fa-thermometer-three-quarters {
+        color: #c3372b;
+      }
+
+      .fa-thermometer-quarter {
+        color: #3e7fb3;
+      }
+
+      .fa-cloud-rain {
+      color: #868687;
+      }
+
+      .fa-wind {
+        color: #4daed1;
+      }
+
+      .weather-info h3 {
+        font-size: 150px;
+        margin-top: 30px;
+      }
+    /* Daily CSS END */
+
+    /* Map CSS Begin */
       .map-section {
         position: relative;
-        background-color: #86a3c3;
+        background-color: #333;
         height: 24vh;
         margin: 2vh;
         width: 90%;
         border: 3px solid black;
-        margin-bottom: 1vh;
         display: inline-block;
       }
 
       .map {
         width: 100%;
         height: 79%;
-        background-color: #7cb342;
+        overflow: hidden;
+      }
+
+      .map img {
+        margin-top: -400px;
       }
 
       .map-title,
       .expand {
         position: absolute;
         height: 20%;
+        background-color: #D2DBED;
       }
 
       .map-title {
-        width: 75%;
+        font-family: 'Kalam', cursive;
+        text-transform: uppercase;
+        font-size: 65px;
+        color: white;
+        width: 85%;
         bottom: 0;
         left: 0;
       }
 
+      .map-title h3 {
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+
       .expand {
-        width: 25%;
+        font-size: 80px;
+        color: white;
+        width: 15%;
         bottom: 0;
         right: 0;
       }
+
+    /* Expand Arrows */
+      .fa-expand-arrows-alt {
+        position: absolute;
+        top: 13px;
+        right: 35px;
+      }
+    /* Map CSS END */
+
+    /* Favourite CSS Begin */
       .favourite-section {
+        font-family: 'Kalam', cursive;
         background-color: #7268a6;
         height: 24vh;
         margin: 2vh;
         width: 90%;
       }
 
+    /* Favourite Star */
+      .fa-star {
+        color: #e8cd6d;
+        margin: 10px;
+      }
+
+      .favourite-section h3 {
+        color: white;
+        font-size: 100px;
+      }
+    /* Favourite CSS END */
+
+    /* Footer CSS Begin */
       .footer-section {
         background-color: #6b3074;
         height: 180px;
       }
+
+    /* Footer CSS END */
